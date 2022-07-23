@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1340px;
+}
+
+.btn-reset {
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// ============
+
+.btn-full {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--primary);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: background-color .3s ease-in-out;
+  transition: border-color .3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--primary-light);
+  }
+  &:focus {
+    background-color: var(--primary-light);
+    border-color: var(--primary-shade);
+  }
+  &:active {
+    background-color: var(--primary-shade);
+  }
+  &:disabled {
+    color: var(--grey);
+    background-color: var(--md-grey);
+  }
+}
+
+.btn-empty {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 600;
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  transition: background-color .3s ease-in-out;
+  transition: border-color .3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+  &:focus {
+    color: var(--white);
+    background-color: var(--primary-light);
+    border-color: var(--primary);
+  }
+  &:active {
+    color: var(--white);
+    background-color: var(--primary-shade);
+  }
+}
+
+.logo {
+  & svg {
+    align-self: center;
+    max-height: 27px;
+    max-width: 190px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

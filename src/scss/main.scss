@@ -1,0 +1,21 @@
+@import 'mixin';
+@import 'variables';
+@import 'global';
+@import './libraries/choices';
+@import './libraries/swiper';
+@import './libraries/swiper-vars';
+@import './libraries/nouislider.min';
+
+@import './components/header';
+@import './components/hero';
+@import './components/special';
+@import './components/high-rating';
+@import './components/oxford';
+@import './components/top-category';
+@import './components/useful';
+@import './components/form';
+@import './components/footer';
+@import './components/catalog-page';
+@import './components/product-page';
+
+@import 'fonts';
